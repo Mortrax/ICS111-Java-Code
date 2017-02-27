@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="484" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="354" key="DIALOG_HEIGHT"/>
+		<item value="478" key="DIALOG_X_ORIGIN"/>
+		<item value="191" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/Users/Troy/Documents/workspace/Jittery"/>
+			<item value="/Users/Troy/Documents/workspace/sp17assignment7"/>
+			<item value="/Users/Troy/Documents/workspace/sp17assignment6"/>
+			<item value="/Users/Troy/Documents/workspace/Assignment5"/>
+			<item value="/Users/Troy/Documents/workspace/GuessANumber"/>
+			<item value="/Users/Troy/Documents/workspace/Pong"/>
+			<item value="/Users/Troy/Documents/workspace/Assignment4"/>
+			<item value="/Users/Troy/Documents/workspace/Assignment3"/>
+			<item value="/Users/Troy/Documents/workspace/ClickAndPlay"/>
+			<item value="/Users/Troy/Documents/workspace/Saberbouncer"/>
+			<item value="/Users/Troy/Documents/workspace/LineExample"/>
+			<item value="/Users/Troy/Documents/workspace/sp17assignment2"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

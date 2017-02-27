@@ -1,0 +1,43 @@
+import java.util.Random;
+
+public class Challenge {
+	
+	// static variable for random number Generator
+	static Random randomGenerator = new Random();
+
+	// function that uses an array of the image file names
+	// to randomly draw 5 dice to the screen at incrementing x coordinates
+	static void roll() {
+		String[] fileNames = {"1c.gif", "2c.gif", "3c.gif", "4c.gif", "5c.gif", "6c.gif"};
+		int yCoord = 250;
+		int xCoord = 50;
+		for(int i = 0; i < 5; i++) {
+			EZ.addImage(fileNames[randomGenerator.nextInt(6)], xCoord, yCoord);
+			xCoord += 100;
+		}
+	}
+
+	public static void main(String[] args) {
+		// initialize the EZ Graphics window
+		EZ.initialize(500, 500);
+		
+		// call Roll initially so that the dice will already be on the screen
+		roll();
+		
+		// main loop
+		while(true) {
+			
+			// check for user mouse click interaction
+			if (EZInteraction.wasMouseLeftButtonPressed() || 
+					EZInteraction.wasMouseLeftButtonReleased()) {
+				
+				// remove current dice and roll() to generate five new dice
+				EZ.removeAllEZElements();
+				roll();
+			}
+			// update the changes to the screen
+			EZ.refreshScreen();
+		} // END main loop
+	}// END main() function
+
+}// Class Challenge

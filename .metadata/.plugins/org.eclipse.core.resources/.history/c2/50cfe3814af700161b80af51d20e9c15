@@ -1,0 +1,40 @@
+import java.util.Random;
+public class Challenge {
+	
+	static Random randomGenerator = new Random();
+	
+	static int[] getFiveNumbers() {
+		int[] result = new int[5];
+		for(int i = 0; i < 5; i++) {
+			result[i] = randomGenerator.nextInt(6) + 1;
+		}
+		return result;
+	}
+	
+	static void drawDieAtPosition(int x, int y, String imageFileName) {
+		EZImage nextDie = EZ.addImage(imageFileName, x, y);
+	}
+	
+	static void roll() {
+		int[] values = getFiveNumbers();
+		String[] fileNames = {"1c.gif", "2c.gif", "3c.gif", "4c.gif", "5c.gif", "6c.gif"};
+		int yCoord = 250;
+		int xCoord = 25;
+		for(int i = 0; i < 5; i++) {
+			drawDieAtPosition(xCoord, yCoord, fileNames[values[i] - 1]);
+			xCoord += 75;
+		}
+		EZ.refreshScreen();
+	}
+
+	public static void main(String[] args) {
+		while(true) {
+			roll();
+			if (EZInteraction.wasMouseLeftButtonReleased()) {
+				EZ.removeAllEZElements();
+				roll();
+			}
+		}
+	}
+
+}

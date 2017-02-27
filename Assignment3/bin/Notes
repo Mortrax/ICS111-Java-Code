@@ -1,0 +1,14 @@
+public - visible to all other classes
+	 - class name has to be same as file name for easier search
+private - only visible within class
+coding readability/formatting
+static - class function, not object function
+void - method which returns no value
+
+package - holds different parts of a larger program 
+
+System.out.println();
+System.out.print();
+
+EZ.graphics example
+http://www2.hawaii.edu/~dylank/ics111/
